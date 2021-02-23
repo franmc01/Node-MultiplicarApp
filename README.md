@@ -35,10 +35,67 @@ Falta argumento requerido: b
 
 Por ejemplo: `node tabla -b 10`
 
+```
+----------------------
+     Tabla del:  10
+----------------------
+10 x 1 = 10
+10 x 2 = 20
+10 x 3 = 30
+10 x 4 = 40
+10 x 5 = 50
+10 x 6 = 60
+10 x 7 = 70
+10 x 8 = 80
+10 x 9 = 90
+10 x 10 = 100
+
+Tabla generada con exito
+```
+
 - Comando para generar la tabla y crear un archivo: `node tabla -b suNumero -t true`
   
 Por ejemplo: `node tabla -b 10 -t true`
 
+```
+----------------------
+     Tabla del:  10
+----------------------
+10 x 1 = 10
+10 x 2 = 20
+10 x 3 = 30
+10 x 4 = 40
+10 x 5 = 50
+10 x 6 = 60
+10 x 7 = 70
+10 x 8 = 80
+10 x 9 = 90
+10 x 10 = 100
+
+Archivo con la tabla del 10 creado correctamente
+```
+
 - Comando para generar la tabla hasta un numero en especifico: `node tabla -b suNumero -h otroNumero`
   
 Por ejemplo: `node tabla -b 10 -h 100`
+
+```
+10 x 1 = 10
+10 x 2 = 20
+...
+10 x 88 = 880
+10 x 89 = 890
+10 x 90 = 900
+10 x 91 = 910
+10 x 92 = 920
+10 x 93 = 930
+10 x 94 = 940
+10 x 95 = 950
+10 x 96 = 960
+10 x 97 = 970
+10 x 98 = 980
+10 x 99 = 990
+10 x 100 = 1000
+
+Tabla generada con exito
+```
