@@ -23,7 +23,7 @@ const argv = require('yargs')
     .option('h', {
         alias: 'hasta',
         type: 'number',
-        default: 12,
+        default: 10,
         desc: 'Indica hasta cuanto se va a multiplicar la base'
 
     })

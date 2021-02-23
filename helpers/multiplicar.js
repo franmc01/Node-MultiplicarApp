@@ -1,13 +1,13 @@
 const fs = require('fs');
 
-const multiplicar = async (base, listar, txt) => {
+const multiplicar = async (base, listar, txt, hasta) => {
 
     try {
         //Elabora la tabla de multiplicacion
         let salida = '';
         let mensaje = '';
 
-        for (let i = 1; i <= 10; i++) {
+        for (let i = 1; i <= hasta; i++) {
             salida += `${base} x ${i} = ${base * i}\n`;
         }
 
