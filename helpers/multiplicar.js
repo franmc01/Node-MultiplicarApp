@@ -1,5 +1,4 @@
 const fs = require('fs');
-const colors = require('colors');
 
 const multiplicar = async (base, listar, txt) => {
 
@@ -9,7 +8,7 @@ const multiplicar = async (base, listar, txt) => {
         let mensaje = '';
 
         for (let i = 1; i <= 10; i++) {
-            salida += `${base} ${'x'.yellow} ${i} ${colors.magenta('=')} ${base * i}\n`;
+            salida += `${base} x ${i} = ${base * i}\n`;
         }
 
         if(listar){
@@ -24,7 +23,7 @@ const multiplicar = async (base, listar, txt) => {
         }
 
         if(txt){
-            fs.writeFileSync(`tabla-${base}.txt`, salida);
+            fs.writeFileSync(`./docs/tabla-${base}.txt`, salida);
             mensaje = `Archivo con la tabla del ${base} creado correctamente`;
         }
 

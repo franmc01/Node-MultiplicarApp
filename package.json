@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/franciscomarin98/Node-PrimerosPasos#readme",
   "dependencies": {
-    "colors": "^1.4.0",
     "yargs": "^16.2.0"
   }
 }
