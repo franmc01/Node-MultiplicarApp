@@ -16,7 +16,6 @@ const multiplicar = async (base, listar, txt) => {
             console.log('     Tabla del: ', base);
             console.log('----------------------');
             console.log(salida);
-            return 'Tabla generada con exito\n'
         }
 
         if(txt){
