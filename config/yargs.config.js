@@ -20,6 +20,13 @@ const argv = require('yargs')
         desc: 'Permita crear o no un archivo .txt con los datos de la tabla generada'
 
     })
+    .option('h', {
+        alias: 'hasta',
+        type: 'number',
+        default: 12,
+        desc: 'Indica hasta cuanto se va a multiplicar la base'
+
+    })
     .check((argv, options) => {
         if (isNaN(argv.b)) {
             throw 'La base tiene que ser un número'
