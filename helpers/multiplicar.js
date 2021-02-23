@@ -1,22 +1,28 @@
 const fs = require('fs');
 
-const multiplicar = async (base = 1) => {
+const multiplicar = async (base, listar, txt) => {
 
     try {
-        console.log('----------------------');
-        console.log('     Tabla del: ', base);
-        console.log('----------------------');
-
+        //Elabora la tabla de multiplicacion
         let salida = '';
 
         for (let i = 1; i <= 10; i++) {
             salida += `${base} x ${i} = ${base * i}\n`;
         }
 
-        console.log(salida);
+        if(listar){
+            //Imprime en consola la tabla
+            console.log('----------------------');
+            console.log('     Tabla del: ', base);
+            console.log('----------------------');
+            console.log(salida);
+            return 'Tabla generada con exito\n'
+        }
 
-        fs.writeFileSync(`tabla-${base}.txt`, salida);
-        return "Archivo creado correctamente";
+        if(txt){
+            fs.writeFileSync(`tabla-${base}.txt`, salida);
+            return `Archivo con la tabla del ${base} creado correctamente`;
+        }
     } catch (error) {
         throw error
     }

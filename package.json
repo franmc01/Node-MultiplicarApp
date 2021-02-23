@@ -1,0 +1,23 @@
+{
+  "name": "tabla-multiplicar",
+  "version": "0.0.2",
+  "description": "\"Esta aplicacion te permite crear las tablas de multiplicar\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franciscomarin98/Node-PrimerosPasos.git"
+  },
+  "author": "Francisco Marin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franciscomarin98/Node-PrimerosPasos/issues"
+  },
+  "homepage": "https://github.com/franciscomarin98/Node-PrimerosPasos#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "yargs": "^16.2.0"
+  }
+}
